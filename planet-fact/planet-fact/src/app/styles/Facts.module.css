@@ -1,0 +1,42 @@
+.fact__container{
+  border: 1px solid rgba(216,216,216,0.2);
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 120px;
+  min-height: min-content;
+  padding: 20px 23px;
+}
+
+.fact__container h3 {
+  color: var(--color-text);
+  font-size: 11px;
+  line-height: 25px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  opacity: 0.5;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.fact__container p {
+  color: var(--color-text);
+  font-size: 40px;
+  font-weight: 500;
+  letter-spacing: -1.5px;
+  margin: 0;
+}
+
+.facts {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2vw;
+  padding: 5.5vh 11vw;
+  padding-top: 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 12.5vh;
+}

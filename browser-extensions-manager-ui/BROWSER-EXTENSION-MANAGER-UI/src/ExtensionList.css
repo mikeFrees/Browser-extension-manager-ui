@@ -1,0 +1,9 @@
+section {
+  width: 91.5vw;
+  max-width: 1170px;
+  min-width: 270px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}

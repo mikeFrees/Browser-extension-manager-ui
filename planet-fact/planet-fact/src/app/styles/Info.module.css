@@ -1,0 +1,37 @@
+.info__container {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  gap: 8px;
+  width: 78vw;
+  height: 79vh;
+  padding: 0 11vw;
+}
+
+.info {
+  grid-row: span 2 / span 2;
+  grid-column: span 2 / span 2;
+  grid-column-start: 6;
+  align-self: center;
+  justify-self: center;
+}
+
+.image__planet {
+  grid-column: span 5 / span 5;
+  grid-row: span 2 / span 2;
+  align-self: center;
+  justify-self: center;
+}
+
+.image__planet__main {
+  align-self: center;
+  justify-self: center;
+  z-index: 1
+}
+
+.image__planet__surface {
+  position: relative;
+  top: 136px;
+  left: -50%;
+  z-index: 2;
+}

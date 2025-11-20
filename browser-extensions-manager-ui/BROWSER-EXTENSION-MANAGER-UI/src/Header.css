@@ -1,0 +1,52 @@
+header {
+  background-color: #fbfdfe;
+  border-radius: 20px;
+  height: 74px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  max-width: 1170px;
+  min-width: 270px;
+  width: 91.5vw;
+  margin-top: clamp(20px, 2.5vw, 40px);
+
+  & img {
+    float: none;
+    margin-right: 0;
+  }
+}
+
+header.darkMode {
+  background-color: #202535;
+}
+
+header.darkMode .logo-path {
+  fill: #fff;
+}
+
+button {
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  background-color: #eee;
+  border-color: transparent;
+}
+
+button.darkMode {
+  background-color: #2f364b;
+}
+
+button.darkMode:hover {
+    background-color: #535868;
+}
+
+button:hover {
+  background-color: #c6c6c6;
+  cursor: pointer;
+}
+
+button:focus-visible {
+  outline-color: transparent;
+  box-shadow: 0px 0px 0px 2px #fbfdfe, 0px 0px 0px 4px #f25c54;
+}
