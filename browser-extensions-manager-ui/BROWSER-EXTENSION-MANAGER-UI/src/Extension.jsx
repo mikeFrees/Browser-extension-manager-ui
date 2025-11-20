@@ -6,7 +6,7 @@ function Extension({ logo, name, description, isActive, id }) {
   const { toggleActive, removeExtension, theme } = useContext(StateContext);
   const logoUrl = `${import.meta.env.BASE_URL}${logo}`;
   return (
-    <article className={ theme === "dark" ? "darkMode" : ""}>
+    <article className={theme === "dark" ? "darkMode" : ""}>
       <img
         src={logoUrl}
         alt={name + " logo"}
@@ -25,7 +25,7 @@ function Extension({ logo, name, description, isActive, id }) {
           key={name}
           onClick={() => toggleActive(id)}
         >
-          <div className={"dot"}></div>
+          <span className={"dot"}></span>
         </button>
       </div>
     </article>
